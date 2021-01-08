@@ -10,6 +10,7 @@ const sgMail = require('@sendgrid/mail');
 process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
 process.env.SENDGRID_API_KEY = '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';
 
+// const Enviroment = require("enviroment.js");
 
 const firebaseConfig = {
   apiKey: "AIzaSyCfsNVhrr-acJ246R23wx-YVUIVcY86WQc",
@@ -20,7 +21,6 @@ const firebaseConfig = {
   messagingSenderId: "984782490625",
   appId: "1:984782490625:web:d25814930229b6f6900400"
 };
-
 
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
